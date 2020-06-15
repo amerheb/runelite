@@ -110,15 +110,6 @@ public class TzhaarTimersPlugin extends Plugin
 		}
 	}
 
-	@Subscribe
-	public void onConfigChanged(ConfigChanged event)
-	{
-		System.out.println("Fight Caves Status: " + tzhaarTimersConfig.fightcaves());
-		System.out.println("Inferno Status: " + tzhaarTimersConfig.inferno());
-
-	}
-
-
 	public boolean isInFightCaves()
 	{
 		if (client.getLocalPlayer() == null)
